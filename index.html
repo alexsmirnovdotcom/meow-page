@@ -10,39 +10,39 @@
     <script>!function(e,t,n,s,a){(a=t.createElement(n)).async=!0,a.src="https://assets.anytrack.io/VVX3ew6fyjgL.js",(t=t.getElementsByTagName(n)[0]).parentNode.insertBefore(a,t),e[s]=e[s]||function(){(e[s].q=e[s].q||[]).push(arguments)}}(window,document,"script","AnyTrack");</script>
     <!-- End AnyTrack Tracking Code -->
 
-
-    <script>
-        let click_id;
-        click_id = AnyTrack('trigger', 'Lead', {
-            email: 'me@alexsmirnov.com',
-            firstName: 'Alex',
-            lastName: 'Smirnov',
-        });
-
-        console.log('Lead click_id: ', click_id);
-
-        click_id = AnyTrack('trigger', 'Purchase', {
-            value: 1.99,
-            taxPrice: 0.2,
-            currency: 'USD',
-            transactionId: '1245823',
-            email: 'me@alexsmirnov.com',
-            firstName: 'Alex',
-            lastName: 'Smirnov',
-            items: [
-                {
-                    id: '82085242',
-                    name: 'CS Skin',
-                    quantity: 1,
-                    price: 1.99
-                }
-            ]
-        });
-
-        console.log('Purchase click_id: ', click_id);
-    </script>
 </head>
 <body>
 Meow! 🐈
 </body>
+
+<script>
+    let click_id;
+    click_id = AnyTrack('trigger', 'Lead', {
+        email: 'me@alexsmirnov.com',
+        firstName: 'Alex',
+        lastName: 'Smirnov',
+    });
+
+    console.log('Lead click_id: ', click_id);
+
+    click_id = AnyTrack('trigger', 'Purchase', {
+        value: 1.99,
+        taxPrice: 0.2,
+        currency: 'USD',
+        transactionId: '1245823',
+        email: 'me@alexsmirnov.com',
+        firstName: 'Alex',
+        lastName: 'Smirnov',
+        items: [
+            {
+                id: '82085242',
+                name: 'CS Skin',
+                quantity: 1,
+                price: 1.99
+            }
+        ]
+    });
+
+    console.log('Purchase click_id: ', click_id);
+</script>
 </html>
