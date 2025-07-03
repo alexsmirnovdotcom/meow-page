@@ -17,32 +17,40 @@ Meow! 🐈
 
 <script>
     let click_id;
-    click_id = AnyTrack('trigger', 'Lead', {
+    // click_id = AnyTrack('trigger', 'Lead', {
+    //     email: 'me@alexsmirnov.com',
+    //     firstName: 'Alex',
+    //     lastName: 'Smirnov',
+    // });
+    //
+    // console.log('Lead click_id: ', click_id);
+    //
+    // click_id = AnyTrack('trigger', 'Purchase', {
+    //     value: 1.99,
+    //     taxPrice: 0.2,
+    //     currency: 'USD',
+    //     transactionId: '1245823',
+    //     email: 'me@alexsmirnov.com',
+    //     firstName: 'Alex',
+    //     lastName: 'Smirnov',
+    //     items: [
+    //         {
+    //             id: '82085242',
+    //             name: 'CS Skin',
+    //             quantity: 1,
+    //             price: 1.99
+    //         }
+    //     ]
+    // });
+    //
+    // console.log('Purchase click_id: ', click_id);
+
+    click_id = AnyTrack('trigger', 'Login', {
         email: 'me@alexsmirnov.com',
         firstName: 'Alex',
         lastName: 'Smirnov',
     });
 
-    console.log('Lead click_id: ', click_id);
-
-    click_id = AnyTrack('trigger', 'Purchase', {
-        value: 1.99,
-        taxPrice: 0.2,
-        currency: 'USD',
-        transactionId: '1245823',
-        email: 'me@alexsmirnov.com',
-        firstName: 'Alex',
-        lastName: 'Smirnov',
-        items: [
-            {
-                id: '82085242',
-                name: 'CS Skin',
-                quantity: 1,
-                price: 1.99
-            }
-        ]
-    });
-
-    console.log('Purchase click_id: ', click_id);
+    console.log('Login click_id: ', click_id);
 </script>
 </html>
